@@ -1,0 +1,22 @@
+id: 82c2f806-c23a-4438-81d5-0ca8a9530d9e
+timestamp: 2023-11-02T13:30:03.074Z
+source: TAP-GUI
+username: trisberg
+accelerator:
+  name: tanzu-java-web-app
+fragments:
+  - name: build-wrapper-gradle
+  - name: build-wrapper-maven
+  - name: devcontainer
+  - name: java-version
+  - name: tap-workload
+options:
+  bsGitBranch: main
+  projectName: my-java-web-app
+  buildTool: maven
+  springBootVersion: 3.1
+  nativeBuild: true
+  javaVersion: 17
+  includeBuildToolWrapper: true
+  includeDevContainer: true
+  bsGitRepository: github.com?owner=trisberg&repo=my-java-web-app
